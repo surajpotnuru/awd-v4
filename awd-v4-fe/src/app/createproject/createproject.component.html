@@ -1,0 +1,88 @@
+<div class="container create-project-container">
+    <div class="level">
+        <h1 class="title create-project-title is-primary level-left">Create Project</h1>
+        <h1 class="title level-right cross-button" (click)="goToHome()"><span class="fas fa-times"></span></h1>
+    </div>
+    <div class="field">
+        <label class="label form-label-custom">Project Name *</label>
+        <div class="control has-icons-left has-icons-right">
+            <input class="input" type="text" placeholder="Name of the project in azkaban workflow designer" [(value)]="azkabanProjectName">
+            <span class="icon is-small is-left">
+                <i class="fas fa-drafting-compass"></i>
+            </span>
+        </div>
+    </div>
+    <div class="field">
+        <label class="label form-label-custom revo-label">Revo Configuration</label>
+    </div>
+    <div class="columns">
+        <div class="column">
+            <div class="field">
+                <label class="label form-label-custom">Client Name</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="text" placeholder="Revo client name configured in RDM" [(value)]="revoClientName">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-pen"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="field">
+                <label class="label form-label-custom">Project Name</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="text" placeholder="Revo project name configured in RDM" [(value)]="revoProjectName">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-pen"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="field">
+        <label class="label form-label-custom azkaban-label">Azkaban Database Configuration</label>
+    </div>
+    <div class="field">
+        <label class="label form-label-custom">Endpoint</label>
+        <div class="control has-icons-left has-icons-right">
+            <input class="input" type="text" placeholder="MySQL endpoint of the azkaban database storing logs" [(value)]="azkabanDBUrl">
+            <span class="icon is-small is-left">
+                <i class="fas fa-globe"></i>
+            </span>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column">
+            <div class="field">
+                <label class="label form-label-custom">Username</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="text" placeholder="Username of the azkaban database storing logs" [(value)]="azkabanDBUsername">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="field">
+                <label class="label form-label-custom">Password</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="password" placeholder="Password of the azkaban database storing logs" [(value)]="azkabanDBPassword">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-password"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="field is-grouped"></div>
+    <div class="field is-grouped">
+        <div class="control">
+            <button class="button is-small is-success create-project-button">
+                <span class="icon is-small">
+                    <i class="fas fa-check"></i>
+                </span>
+                <span>Create</span></button>
+        </div>
+    </div>
+</div>

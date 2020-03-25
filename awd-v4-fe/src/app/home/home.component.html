@@ -1,0 +1,47 @@
+<div class="container main-banner">
+	<h1 class="main-title"><span>Azkaban</span> Workflow Designer</h1>
+	<div class="but-drop-wrap">
+		<div class="field has-addons but-drop">
+			<div class="control has-icons-left">
+				<div class="select">
+					<select>
+						<option disabled selected>Choose Project</option>
+						<option *ngFor="let project of project_names">{{project}}</option>
+					</select>
+				</div>
+				<span class="icon is-left">
+					<i class="fas fa-th-list"></i>
+				</span>
+			</div>
+			<p class="control">
+				<button class="button is-success">
+					<span class="icon is-small">
+						<i class="fas fa-fighter-jet"></i>
+					</span>
+					<span class="heading cnp-bt">Go</span>
+				</button>
+			</p>
+			<p class="control or">
+				or
+			</p>
+			<p class="control">
+				<button class="button is-info" routerLink="/createproject">
+					<span class="icon is-small">
+						<i class="fas fa-plus-square"></i>
+					</span>
+					<span class="heading cnp-bt">create new project</span>
+				</button>
+			</p>
+		</div>
+	</div>
+	<div class="credit">
+		<p class="buttons">
+			<button class="button is-small">
+				<span class="icon is-small">
+					<i class="fab fa-github"></i>
+				</span>
+				<span>v4 | built by suraj</span>
+			</button>
+		</p>
+	</div>
+</div>

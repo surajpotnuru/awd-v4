@@ -7,12 +7,17 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CreateprojectComponent } from './createproject/createproject.component';
+import { DesignerComponent } from './designer/designer.component';
 
 
 const appRoutes: Routes = [
 	{
 		path: 'createproject',
 		component: CreateprojectComponent
+	},
+	{
+		path: 'designer',
+		component: DesignerComponent
 	},
 	{
 		path: '',
@@ -25,7 +30,8 @@ const appRoutes: Routes = [
 	declarations: [
 		AppComponent,
 		HomeComponent,
-		CreateprojectComponent
+		CreateprojectComponent,
+		DesignerComponent
 	],
 	imports: [
 		BrowserModule,

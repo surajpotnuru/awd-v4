@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { GojsAngularModule } from 'gojs-angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -37,6 +38,7 @@ const appRoutes: Routes = [
 		BrowserModule,
 		AppRoutingModule,
 		HttpClientModule,
+		GojsAngularModule,
 		RouterModule.forRoot(appRoutes, {
 			enableTracing: true
 		})

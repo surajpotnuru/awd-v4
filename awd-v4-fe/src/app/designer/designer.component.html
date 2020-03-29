@@ -31,11 +31,13 @@
                 <span>Shell Node</span>
             </div>
             <div class="icon-item">
-                <p><img src="assets/spark.png"><p></p>
-                <span>Spark Node</span>
+                <p><img src="assets/spark.png">
+                    <p></p>
+                    <span>Spark Node</span>
             </div>
             <div class="icon-item">
-                <p><img src="assets/revo.jpg"><p>
+                <p><img src="assets/revo.jpg">
+                    <p>
                         <span>Revo Nodes</span>
                         <div class="select is-small">
                             <select>
@@ -54,6 +56,14 @@
         <nav class="navbar main-nav is-link" role="navigation" aria-label="main navigation">
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-end">
+                    <a class="navbar-item tool-kit" title="Save Workflow"><i class="fas fa-save"></i></a>
+                    <a class="navbar-item tool-kit" title="Download Workflow"><i class="fas fa-download"></i></a>
+                    <a class="navbar-item tool-kit" title="Upload Workflow"><i class="fas fa-upload"></i></a>
+                    <a class="navbar-item tool-kit" title="Upload Jobs List"><i class="fas fa-th-list"></i></a>
+                    <a class="navbar-item tool-kit" title="Auto Arrange"><i class="fas fa-th"></i></a>
+                    <a class="navbar-item tool-kit" title="Create Zip File"><i class="far fa-file-archive"></i></a>
+                    <a class="navbar-item tool-kit" title="Download Jobslist as excel"><i
+                            class="far fa-file-excel"></i></a>
                     <div class="navbar-item has-dropdown is-hoverable hover-list">
                         <a class="navbar-link">More</a>
                         <div class="navbar-dropdown">
@@ -73,5 +83,9 @@
                 </div>
             </div>
         </nav>
+        <gojs-diagram [initDiagram]='initDiagram' [nodeDataArray]='diagramNodeData' [linkDataArray]='diagramLinkData'
+            [modelData]='diagramModelData' (modelChange)='diagramModelChange($event)'
+            [divClassName]='diagramDivClassName'>
+        </gojs-diagram>
     </div>
 </div>
